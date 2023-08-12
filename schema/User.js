@@ -23,6 +23,21 @@ const userSchema = new mongoose.Schema({
     GitHub:{
         type:String,
         default:''
+    },
+    settings:{
+        Status:{
+            type:String,
+            default:"Online"
+        },
+        isMuted:{
+            type:Boolean,
+            default:false
+        },
+        isDeafened:{
+            type:Boolean,
+            default:false
+        }
+
     }
 });
 
